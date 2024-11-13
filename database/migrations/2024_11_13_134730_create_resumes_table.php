@@ -15,7 +15,7 @@ return new class extends Migration {
             $table->string('file_name');
             $table->string('file_url');
             $table->timestamp('uploaded_at');
-            $table->string('parsed_text');
+            $table->string('parsed_text')->nullable();
             $table->timestamps();
         });
     }
